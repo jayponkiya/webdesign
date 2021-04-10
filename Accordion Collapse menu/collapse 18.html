@@ -1,0 +1,91 @@
+<!-- W3hubs.com - Download Free Responsive Website Layout Templates designed on HTML5 CSS3,Bootstrap which are 100% Mobile friendly. w3Hubs all Layouts are responsive cross browser supported, best quality world class designs. -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap Accordion With Arrow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style type="text/css">
+      body{
+      font-family: 'Montserrat', sans-serif;
+      }
+      h2{
+      text-transform: capitalize;
+      text-align: center;
+      padding: 15px;
+      }
+      h3{
+      font-size: 18px;
+      background:#535c68;
+      padding: 20px 20px;
+      margin: 0;
+      color: #fff;
+      }
+      .list-group-item{
+      cursor: pointer;
+      text-transform: capitalize;
+      padding: 0;
+      border:0px;       
+      border-radius: 0px;
+      }
+      li:after {
+      content: "\f078"; /* fa-chevron-down */
+      font-family: 'FontAwesome';
+      position: absolute;
+      right: 0;
+      padding-right: 15px;
+      top: 15px;
+      color: #fff;
+      }
+      li[aria-expanded="true"]:after {
+      content: "\f077"; /* fa-chevron-up */
+      }
+      p{
+      background: #95afc0;
+      margin: 0;
+      padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Bootstrap Accordion With Arrow</h2>
+      <div class="accordion">
+        <ul class="list-group">
+          <li class="list-group-item" data-toggle="collapse" data-target="#html">
+            <h3>HTML</h3>
+            <div id="html" class="collapse ">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </li>
+          <li class="list-group-item" data-toggle="collapse" data-target="#css">
+            <h3>CSS</h3>
+            <div id="css" class="collapse ">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </li>
+          <li class="list-group-item" data-toggle="collapse" data-target="#javascript">
+            <h3>JAVASCRIPT</h3>
+            <div id="javascript" class="collapse ">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

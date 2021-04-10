@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body{
+      font-family: 'Montserrat', sans-serif;
+      background-color: #808e9b;
+    }
+    a,a:hover{
+      text-decoration: none;
+    }
+    .list-group-item,.card{
+      border: 0px;
+    }
+    .card-header{
+      background-color: #dfe4ea;
+      font-size: 20px;
+    }
+    .card{
+      border-left: 1px solid rgba(0,0,0,.125);
+      border-right: 1px solid rgba(0,0,0,.125);
+      border-radius: 0px !important;
+    }
+    .card-header:first-child{
+      border-radius: 0px;
+    }
+    .fas{
+      padding-right: 5px;
+    }
+    #accordion{
+      border-top: 1px solid rgba(0,0,0,.125);
+    
+    }
+    .list-group-item{
+      border-bottom: 1px solid #ced6e0;
+    }
+    .card-body{
+      padding:0;
+    }
+    .list-group-item{
+      background-color: #f1f2f6;
+         border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    }
+.list-group-item:last-child{
+      border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+  </style>
+</head>
+<body>
+
+<div class="container mt-5">
+  <div id="accordion">
+  <div class="card">
+    <div class="card-header">
+      <a class="card-link" data-toggle="collapse" href="#collapseOne">
+       <i class="fas fa-file-alt"></i> Content
+      </a>
+    </div>
+    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+      <div class="card-body">
+        <ul class="list-group">
+        <li class="list-group-item"><a href="#"><i class="fas fa-angle-double-right"></i>First item</a></li>
+        <li class="list-group-item"><a href="#"><i class="fas fa-angle-double-right"></i>Second item<span class="badge badge-secondary ml-2">New</span></a></li>
+        <li class="list-group-item"><a href="#"><i class="fas fa-angle-double-right"></i>Third item</a></li>
+      </ul>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+      <i class="fas fa-info-circle"></i>Informations
+      </a>
+    </div>
+    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+      <div class="card-body">
+        <ul class="list-group">
+        <li class="list-group-item"><a href="#"><i class="fas fa-angle-double-right"></i>First item</a></li>
+        <li class="list-group-item"><a href="#"><i class="fas fa-angle-double-right"></i>Second item</a></li>
+        <li class="list-group-item"><a href="#"><i class="fas fa-angle-double-right"></i>Third item</a></li>
+      </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+     <i class="fas fa-flag"></i>  Reports
+      </a>
+    </div>
+    <div id="collapseThree" class="collapse" data-parent="#accordion">
+      <div class="card-body">
+         <ul class="list-group">
+        <li class="list-group-item"><a href="#"><i class="fas fa-angle-double-right"></i>First item</a></li>
+        <li class="list-group-item"><a href="#"><i class="fas fa-angle-double-right"></i>Second item</a></li>
+        <li class="list-group-item"><a href="#"><i class="fas fa-angle-double-right"></i>Third item</a></li>
+      </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+</body>
+</html>

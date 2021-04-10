@@ -1,0 +1,129 @@
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<style type="text/css">
+   
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/*
+snippet from Animate.css - zoomIn effect
+*/
+.animated{animation-duration:1s;animation-fill-mode:both;}
+.animated.infinite{animation-iteration-count:infinite;}
+.animated.hinge{animation-duration:2s;}
+@keyframes zoomIn{0%{opacity:0;transform:scale3d(.3,.3,.3)}50%{opacity:1}}
+.zoomIn{animation-name:zoomIn;}
+@keyframes zoomOut{0%{opacity:1}50%{opacity:0;transform:scale3d(.3,.3,.3)}100%{opacity:0;}}
+.zoomOut{animation-name:zoomOut;}
+
+#accordion .panel-title i.fa{
+    transition: transform 0.5s ease-in-out;
+}
+a:hover {
+    text-decoration: none;
+}
+.rotate-icon{
+    transform: rotate(225deg);
+}
+.panel{
+    width: 100%;
+    border: 0px;
+    border-bottom: 1px solid #30bb64;
+}
+.panel-group .panel+.panel{
+    margin-top: 0px;
+}
+.panel-group .panel{
+    border-radius: 0px;
+}
+.panel-heading{
+    border-radius: 0px;
+    color: white;
+    padding: 10px 15px;
+    width: 1200px;
+}
+.panel-custom>.panel-heading{
+    background-color: #38cc70;
+}
+.panel-group .panel:last-child{
+    border-bottom: 5px solid #2ba659;
+}
+panel-collapse .collapse.in{
+    border-bottom:0;
+}
+</style>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-custom">
+                <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="text-light font-weight-light">
+                            <i class="fa fa-plus text-light mr-3"></i>
+                            Collapsible Group Item #1
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body animated zoomOut">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-custom">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                        <a class="collapsed text-light font-weight-light" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" >
+                            <i class="fa fa-plus text-light mr-3"></i>
+                            Collapsible Group Item #2
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body animated zoomOut">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-custom">
+                <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">                    
+                        <a class="collapsed text-light font-weight-light" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" >         
+                        <i class="fa fa-plus text-light mr-3"></i>              
+                            Collapsible Group Item #3
+                        </a>                        
+                    </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="panel-body animated zoomOut">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function() {
+
+    function toggleChevron(e) {
+        $(e.target)
+                .prev('.panel-heading')
+                .find("i")
+                .toggleClass('rotate-icon');
+        $('.panel-body.animated').toggleClass('zoomIn zoomOut');
+    }
+    
+    $('#accordion').on('hide.bs.collapse', toggleChevron);
+    $('#accordion').on('show.bs.collapse', toggleChevron);
+})
+
+
+</script>

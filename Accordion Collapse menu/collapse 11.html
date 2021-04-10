@@ -1,0 +1,132 @@
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<style type="text/css">
+	/* Demo Background */
+body{background:url(http://bootstraptema.ru/images/bg/bg-4.png)}
+
+a:hover,a:focus{
+ text-decoration: none;
+ outline: none;
+}
+
+#accordion .panel{
+ border: none;
+ box-shadow: none;
+ border-radius: 0;
+ margin-bottom: 5px;
+}
+
+#accordion .panel-heading{
+ padding: 0;
+ border-radius: 0;
+ text-align: center;
+ border: none;
+}
+
+#accordion .panel-title a{
+ display: block;
+ padding: 15px;
+ font-size: 16px;
+ font-weight: bold;
+ color: #fff;
+ background: #0C0119;
+ transition: all 0.5s ease 0s;
+}
+
+#accordion .panel-title a:hover{
+ background: rgba(12, 1, 25, 0.8);
+}
+
+#accordion .panel-body{
+ font-size: 14px;
+ color: #fff;
+ background: #29b0a0;
+ padding: 15px 20px;
+ line-height: 25px;
+ border: none;
+ position: relative;
+}
+
+#accordion .panel-body:after{
+ content: "";
+ position: absolute;
+ top: -30px;
+ left: 40px;
+ border: 15px solid transparent;
+ border-bottom: 15px solid #29b0a0;
+}
+</style>
+
+<div class="container">
+<div class="row">
+<div class="col-md-offset-3 col-md-6">
+
+ <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+ <div class="panel panel-default">
+ <div class="panel-heading" role="tab" id="headingOne">
+ <h4 class="panel-title">
+ <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+ SECTION 1
+ </a>
+ </h4>
+ </div>
+ <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+ <div class="panel-body">
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacinia lacinia mauris, at ultricies leo ornare nec. Vivamus eu est vel felis dignissim tempor. Nulla facilisi. Duis molestie tortor ac tempor volutpat. Phasellus nec mi aliquet, sollicitudin neque eget, consectetur libero. Vestibulum sollicitudin sapien libero, egestas tempus eros scelerisque eu. <a href="http://bootstraptema.ru/stuff/snippets_bootstrap/elements/stilnyj_bootstrap_accordion/33-1-0-1885" target="_blank">BootstrapTema</a>
+ </div>
+ </div>
+ </div>
+ <div class="panel panel-default">
+ <div class="panel-heading" role="tab" id="headingTwo">
+ <h4 class="panel-title">
+ <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+ SECTION 2
+ </a>
+ </h4>
+ </div>
+ <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+ <div class="panel-body">
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacinia lacinia mauris, at ultricies leo ornare nec. Vivamus eu est vel felis dignissim tempor. Nulla facilisi. Duis molestie tortor ac tempor volutpat. Phasellus nec mi aliquet, sollicitudin neque eget, consectetur libero. Vestibulum sollicitudin sapien libero, egestas tempus eros scelerisque eu. <a href="http://bootstraptema.ru/stuff/snippets_bootstrap/elements/stilnyj_bootstrap_accordion/33-1-0-1885" target="_blank">BootstrapTema</a>
+ </div>
+ </div>
+ </div>
+ <div class="panel panel-default">
+ <div class="panel-heading" role="tab" id="headingThree">
+ <h4 class="panel-title">
+ <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+ SECTION 3
+ </a>
+ </h4>
+ </div>
+ <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+ <div class="panel-body">
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacinia lacinia mauris, at ultricies leo ornare nec. Vivamus eu est vel felis dignissim tempor. Nulla facilisi. Duis molestie tortor ac tempor volutpat. Phasellus nec mi aliquet, sollicitudin neque eget, consectetur libero. Vestibulum sollicitudin sapien libero, egestas tempus eros scelerisque eu. <a href="http://bootstraptema.ru/stuff/snippets_bootstrap/elements/stilnyj_bootstrap_accordion/33-1-0-1885" target="_blank">BootstrapTema</a>
+ </div>
+ </div>
+ </div>
+ <div class="panel panel-default">
+ <div class="panel-heading" role="tab" id="headingFour">
+ <h4 class="panel-title">
+ <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+ SECTION 4
+ </a>
+ </h4>
+ </div>
+ <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+ <div class="panel-body">
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacinia lacinia mauris, at ultricies leo ornare nec. Vivamus eu est vel felis dignissim tempor. Nulla facilisi. Duis molestie tortor ac tempor volutpat. Phasellus nec mi aliquet, sollicitudin neque eget, consectetur libero. Vestibulum sollicitudin sapien libero, egestas tempus eros scelerisque eu. <a href="http://bootstraptema.ru/stuff/snippets_bootstrap/elements/stilnyj_bootstrap_accordion/33-1-0-1885" target="_blank">BootstrapTema</a>
+ </div>
+ </div>
+ </div>
+
+ </div><!-- /.panel-group -->
+
+ </div><!-- /.col-md-offset-3 col-md-6 -->
+</div><!-- /.row -->
+</div><!-- /.container --> 
